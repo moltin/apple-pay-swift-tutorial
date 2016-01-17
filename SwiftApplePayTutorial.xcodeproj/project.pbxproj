@@ -22,6 +22,7 @@
 		BA0DA33E1C4AFA4C00D159B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA0DA3411C4AFA4C00D159B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA0DA3431C4AFA4C00D159B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA2F7EC11C4BCD0C008B8B73 /* SwiftApplePayTutorial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SwiftApplePayTutorial.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		BA0DA3361C4AFA4C00D159B6 /* SwiftApplePayTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				BA2F7EC11C4BCD0C008B8B73 /* SwiftApplePayTutorial.entitlements */,
 				BA0DA3371C4AFA4C00D159B6 /* AppDelegate.swift */,
 				BA0DA3391C4AFA4C00D159B6 /* ViewController.swift */,
 				BA0DA33B1C4AFA4C00D159B6 /* Main.storyboard */,
@@ -96,6 +98,12 @@
 				TargetAttributes = {
 					BA0DA3331C4AFA4C00D159B6 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = R34BFHF8VF;
+						SystemCapabilities = {
+							com.apple.OMC = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -247,10 +255,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftApplePayTutorial/SwiftApplePayTutorial.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SwiftApplePayTutorial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.moltin.SwiftApplePayTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -258,10 +270,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftApplePayTutorial/SwiftApplePayTutorial.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SwiftApplePayTutorial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.moltin.SwiftApplePayTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -284,6 +300,7 @@
 				BA0DA3481C4AFA4C00D159B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
