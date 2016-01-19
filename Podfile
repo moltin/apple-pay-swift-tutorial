@@ -6,5 +6,6 @@ use_frameworks!
 target 'SwiftApplePayTutorial' do
     pod 'Moltin'
     pod 'Stripe'
+    pod 'Stripe/ApplePay'
 
 end

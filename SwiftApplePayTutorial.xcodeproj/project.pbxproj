@@ -27,6 +27,7 @@
 		BA0DA3411C4AFA4C00D159B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA0DA3431C4AFA4C00D159B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA2F7EC11C4BCD0C008B8B73 /* SwiftApplePayTutorial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SwiftApplePayTutorial.entitlements; sourceTree = "<group>"; };
+		BA2F7EC31C4BD1E9008B8B73 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 		BA0DA3361C4AFA4C00D159B6 /* SwiftApplePayTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				BA2F7EC31C4BD1E9008B8B73 /* BridgingHeader.h */,
 				BA2F7EC11C4BCD0C008B8B73 /* SwiftApplePayTutorial.entitlements */,
 				BA0DA3371C4AFA4C00D159B6 /* AppDelegate.swift */,
 				BA0DA3391C4AFA4C00D159B6 /* ViewController.swift */,
@@ -339,6 +341,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.moltin.SwiftApplePayTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = BridgingHeader.h;
 			};
 			name = Debug;
 		};
@@ -355,6 +358,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.moltin.SwiftApplePayTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = BridgingHeader.h;
 			};
 			name = Release;
 		};

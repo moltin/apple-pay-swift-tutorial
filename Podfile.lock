@@ -18,11 +18,14 @@ PODS:
     - AFNetworking
   - Stripe (6.0.1):
     - Stripe/Core (= 6.0.1)
+  - Stripe/ApplePay (6.0.1):
+    - Stripe/Core
   - Stripe/Core (6.0.1)
 
 DEPENDENCIES:
   - Moltin
   - Stripe
+  - Stripe/ApplePay
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
